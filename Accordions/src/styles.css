@@ -1,0 +1,51 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* accordian accordian-card header icon content */
+
+body{
+    display: flex;
+    height: 100vh;
+    background-color: #1b1b1b;
+    color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordian{
+    border: 2px solid white;
+}
+
+.accordian-card{
+    margin: 20px;
+    padding: 20px;
+    background: rgb(73,73,73);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    width: 40rem;
+}
+
+.card-title{
+    display: flex;
+    justify-content: space-between;
+    width: 50rem;
+}
+
+.icon{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+p.card-info{
+    width: 30rem;
+    padding: 20px 0;
+    line-height: 1.3;
+}
+
