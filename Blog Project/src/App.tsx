@@ -19,7 +19,7 @@ const App = () => {
     setModalOpen(true);
   };
 
-  const openModalForEdit = () => {
+  const openModalForEdit = (blog:Blog) => {
     setEditingBlog(blog);
     setModalOpen(true);
   };
@@ -41,7 +41,7 @@ const App = () => {
             <ArticleList onEdit={openModalForEdit} />
               {isModalOpen && (
                 <Modal onClose={() => setModalOpen(false)}>
-                  <BlogForm exisitngBlog = {editingBlog} onClose={() => setModalOpen(false)} />
+                  <BlogForm existingBlog = {editingBlog} onClose={() => setModalOpen(false)} />
                 </Modal>
               )}
             </div>
